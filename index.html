@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Stephen O'Toole - Sokoban</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Javascript/functions.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="gamecontainer">
+            <canvas id="game" width = "288" height = "288">
+            </canvas>
+
+        </div>
+        <div id="restart" class="gamecontainer">
+            <button onclick="restart()">Restart</button>
+        </div>
+        <div id="currentLevel" class="gamecontainer">
+        </div>
+        <div id="stepCount" class="gamecontainer">
+        </div>
+        <div id="score" class="gamecontainer">
+
+        </div>
+        <div id="nextlevel" class="gamecontainer">
+            <button onclick="nextLevel()">Next level</button>
+        </div>
+        <div id="finish" class="gamecontainer">
+            <p>Congratulations on completing all of the levels! Press the 'return' button to begin again.</p>
+            <button onclick="restartGame()">Return</button>
+        </div>
+        <div id="instructions">
+            Use the W, A, S, D keys to move. Try to get all of the boxes onto the goals.
+        </div>
+    </body>
+</html>
